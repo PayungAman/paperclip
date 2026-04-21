@@ -1,7 +1,8 @@
 services:
   paperclip:
     build:
-      Dockerfile
+      context: ../
+      dockerfile: Dockerfile
     ports:
       - "${PAPERCLIP_PORT:-3100}:3100"
     environment:
